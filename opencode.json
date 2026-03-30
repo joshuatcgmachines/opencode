@@ -10,6 +10,17 @@
       }
     }
   },
+  "mcp": {
+    "context7": {
+      "enabled": true,
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    }
+  },
   "plugin": [
     "@nick-vi/opencode-type-inject",
     "opencode-websearch-cited",
