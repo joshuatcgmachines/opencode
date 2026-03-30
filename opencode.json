@@ -19,6 +19,15 @@
         "-y",
         "@upstash/context7-mcp"
       ]
+    },
+    "playwright": {
+      "enabled": true,
+      "type": "local",
+      "command": [
+        "npx",
+        "@playwright/mcp@latest",
+        "--headless"
+      ]
     }
   },
   "plugin": [
