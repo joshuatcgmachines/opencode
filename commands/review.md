@@ -2,4 +2,4 @@
 description: Run code review
 ---
 
-Ask @code-reviewer to check the uncommitted changes.
+Ask @code-reviewer and @security-reviewer to check the uncommitted changes.
