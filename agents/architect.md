@@ -1,6 +1,7 @@
 ---
 description: Senior Software Architect
 mode: primary
+model: anthropic/claude-sonnet-4-6
 temperature: 0.35
 reasoningEffort: high
 textVerbosity: low

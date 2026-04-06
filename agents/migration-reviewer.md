@@ -1,6 +1,7 @@
 ---
 description: Review database and data migration safety
 mode: subagent
+model: openai/gpt-5.3-codex
 temperature: 0.05
 reasoningEffort: high
 textVerbosity: low

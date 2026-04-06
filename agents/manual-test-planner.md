@@ -1,6 +1,7 @@
 ---
 description: Manual QA planner for validating uncommitted changes
 mode: subagent
+model: openai/gpt-5.3-codex
 temperature: 0.1
 reasoningEffort: medium
 textVerbosity: low

@@ -4,4 +4,4 @@ bun.lock
 .idea
 opencode-notifier-state.json
 .env
-
+.agents

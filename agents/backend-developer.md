@@ -1,6 +1,7 @@
 ---
 description: Backend developer specializing in Node.js + TypeScript
 mode: all
+model: openai/gpt-5.3-codex
 temperature: 0.2
 tools:
   write: true
