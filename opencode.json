@@ -2,11 +2,19 @@
   "$schema": "https://opencode.ai/config.json",
   "autoupdate": true,
   "model": "openai/gpt-5.3-codex",
+  "default_agent": "architect",
   "provider": {
     "openai": {
       "options": {
         "websearch_cited": {
           "model": "gpt-5.4"
+        }
+      }
+    },
+    "anthropic": {
+      "options": {
+        "websearch_cited": {
+          "model": "claude-sonnet-4-6"
         }
       }
     }
@@ -51,6 +59,26 @@
         "chrome-devtools-mcp@latest",
         "--no-usage-statistics"
       ]
+    },
+    "mcp_server_mysql_core": {
+      "enabled": true,
+      "type": "local",
+      "command": [
+        "/Users/joshuamcnabb/.nvm/versions/node/v20.10.0/bin/npx",
+        "-y",
+        "@benborla29/mcp-server-mysql"
+      ],
+      "environment": {
+        "MYSQL_HOST": "{env:MYSQL_HOST}",
+        "MYSQL_PORT": "{env:MYSQL_PORT}",
+        "MYSQL_USER": "{env:MYSQL_USER}",
+        "MYSQL_PASS": "{env:MYSQL_PASS}",
+        "MYSQL_DB": "{env:MYSQL_DB}",
+        "PATH": "/Users/joshuamcnabb/.nvm/versions/node/v20.10.0/bin:/usr/bin:/bin",
+        "ALLOW_INSERT_OPERATION": "false",
+        "ALLOW_UPDATE_OPERATION": "false",
+        "ALLOW_DELETE_OPERATION": "false"
+      }
     }
   },
   "plugin": [
