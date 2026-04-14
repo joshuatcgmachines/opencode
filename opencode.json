@@ -33,7 +33,7 @@
       }
     },
     "playwright": {
-      "enabled": true,
+      "enabled": false,
       "type": "local",
       "command": [
         "npx",
@@ -42,7 +42,7 @@
       ]
     },
     "next-devtools": {
-      "enabled": true,
+      "enabled": false,
       "type": "local",
       "command": [
         "npx",
