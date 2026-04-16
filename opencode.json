@@ -22,7 +22,8 @@
   "agent": {
     "architect": {
       "tools": {
-        "sequential-thinking_*": true
+        "sequential-thinking_*": true,
+        "superlocalmemory_*": true
       }
     }
   },
