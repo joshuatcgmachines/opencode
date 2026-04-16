@@ -5,4 +5,5 @@
 - Use `!!value` for boolean coercion, not `Boolean(value)`.
 - Write plain numeric literals without underscores: `10000`, not `10_000`.
 - Omit explicit return types when TypeScript can infer them; only add them when inference fails or the type would be ambiguous to a reader.
+- Prefer destructuring for objects and arrays when accessing multiple properties or elements. When a destructured name would be ambiguous without its source context, rename it inline (e.g. `const { id: userId } = user` instead of a bare `id`).
 - Boolean variables and props must use a semantic prefix: `is`, `are`, `has`, `should`, `can`, `did`, `will`, etc. (e.g. `isLoading`, `hasError`, `shouldRefetch`).
