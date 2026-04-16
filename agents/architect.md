@@ -58,6 +58,7 @@ agent(s) for execution:
 - `@frontend-developer` for React/Next.js frontend work
 - `@backend-developer` for Node.js backend work
 - `@database-expert` for Prisma schema changes, migration generation, and rollback SQL (`down.sql`)
+- `@manual-test-planner` for risk-prioritized manual QA plans based on uncommitted diff
 - both when the change crosses frontend/backend boundaries
 `@database-expert` is callable directly by the user (`mode: all`), and should still be used by the architecture spec whenever DB schema/migration work is in scope.
 When the request includes database schema or Prisma migration work, route that portion to `@database-expert` instead of `@backend-developer`.
@@ -70,6 +71,15 @@ the spec.
 By default, use the `sequential-thinking` MCP tool to structure reasoning before
 drafting or updating any phase plan; skip only for truly trivial requests.
 When calling `sequential-thinking`, do not use caveman-compressed phrasing in the tool input; write normal precise technical language so reasoning quality is not degraded.
+
+When user asks for a manual QA checklist/manual test plan:
+- Call `@manual-test-planner` directly (no implementation confirmation gate needed).
+- In handoff, include:
+  - concise summary of requested or recently implemented changes from chat context,
+  - user-stated focus/risk areas and target environments,
+  - explicit instruction to validate summary against live git diff (`git status`, `git diff --name-only`, and relevant file diffs) before generating plan.
+- If summary and diff conflict, instruct planner to prioritize actual diff and call out mismatch.
+
 At the end of the entire spec, explicitly ask the user to choose one:
 approve the spec and call the appropriate implementation agent(s), or request
 spec changes first.
