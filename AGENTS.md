@@ -10,6 +10,8 @@ Never run Prisma reset commands unless user explicitly asks in current chat.
 - Block all reset-like commands by default: `prisma migrate reset`, `prisma db reset`, `prisma db push --force-reset`, or any command that drops/recreates database.
 - If user explicitly requests reset, require clear one-line confirmation right before execution.
 
+Only invoke `sequential-thinking` MCP for genuinely complex, multi-step reasoning tasks. Do not use it for straightforward requests — it consumes significant tokens.
+
 Use `superlocalmemory` MCP when appropriate.
 - At task start, recall memory when request depends on prior decisions, user preferences, project conventions, or earlier unresolved commitments.
 - At task end, capture only durable, reusable facts (stable preferences, workflow rules, architecture decisions, environment constraints, and explicit follow-ups).
