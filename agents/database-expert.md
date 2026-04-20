@@ -4,7 +4,7 @@ mode: all
 model: openai/gpt-5.3-codex
 color: "#0F766E"
 temperature: 0.1
-reasoningEffort: high
+reasoningEffort: medium
 textVerbosity: low
 tools:
   write: true
