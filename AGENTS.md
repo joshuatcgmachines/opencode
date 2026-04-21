@@ -1,7 +1,6 @@
 # Personal Global Rules
 
 Before first response in every new chat and before each subagent task, load and apply skill `caveman` (default level: `full`).
-Exception: do not apply caveman style when preparing input for `sequential-thinking` MCP calls; use normal precise technical language for those calls.
 
 If user says `/caveman lite|full|ultra`, switch level.
 If user says `stop caveman` or `normal mode`, disable caveman for that session.
@@ -11,8 +10,6 @@ Never run Prisma reset commands unless user explicitly asks in current chat.
 - If user explicitly requests reset, require clear one-line confirmation right before execution.
 - Prisma migration granularity: keep one `migration.sql` focused on one logical schema change.
 - Example: if creating multiple tables, create one table per migration (separate migrations).
-
-Only invoke `sequential-thinking` MCP for genuinely complex, multi-step reasoning tasks. Do not use it for straightforward requests — it consumes significant tokens.
 
 Use `superlocalmemory` MCP when appropriate.
 - At task start, recall memory when request depends on prior decisions, user preferences, project conventions, or earlier unresolved commitments.
