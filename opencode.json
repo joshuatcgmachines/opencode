@@ -103,6 +103,6 @@
     "@mohak34/opencode-notifier",
     "@slkiser/opencode-quota",
     "opencode-vibeguard",
-    "opencode-handoff"
+    "opencode-mem"
   ]
 }
