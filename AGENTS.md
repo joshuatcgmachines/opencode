@@ -1,5 +1,7 @@
 # Personal Global Rules
 
+Read the following file immediately as it is relevant to all coding workflows: @rules/coding-style.md
+
 Before first response in every new chat and before each subagent task, load and apply skill `caveman` (default level: `full`).
 
 If user says `/caveman lite|full|ultra`, switch level.
