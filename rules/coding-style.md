@@ -9,4 +9,5 @@
 - Boolean variables and props must use a semantic prefix: `is`, `are`, `has`, `should`, `can`, `did`, `will`, etc. (e.g. `isLoading`, `hasError`, `shouldRefetch`).
 - Prefer `async`/`await` over `.then()`/`.catch()` chains for Promise handling.
 - Prefer arrow function expressions over function declarations: `const foo = () => {}` not `function foo() {}`. Exceptions: class methods, object methods that use `this`, generator functions, and any context where hoisting is required.
-- Prefer named exports over default exports. Only use `export default` when required by a framework convention (e.g. Next.js page/layout files, dynamic `import()` with named-export limitations).
+- Prefer named exports over default exports.
+- React component props types must be named after their component with a `Props` suffix: e.g. `MyComponentProps` for `MyComponent`. Only use `export default` when required by a framework convention (e.g. Next.js page/layout files, dynamic `import()` with named-export limitations).
