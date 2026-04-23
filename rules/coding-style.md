@@ -20,3 +20,4 @@ All rules below are defaults and can be overridden by the user on request.
 ## TypeScript
 
 - Prefer narrow, explicit types over `any`; use `unknown` with narrowing for untrusted or runtime-boundary inputs.
+- Avoid `as const` by default. Use it only when necessary to preserve exact literal types or readonly tuple/object semantics that downstream types explicitly require.
